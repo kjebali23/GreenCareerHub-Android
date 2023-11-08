@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Event</string>
+    <string name="title">techno store</string>
+    <string name="Description">blablabla</string>
+    <string name="Description2">Description</string>
+    <string name="DescriptionHAC">aaaaaaaaaaaaaaaaaaa</string>
+    <string name="titleHAC">HAC</string>
+    <string name="title2prixHACK">10</string>
+    <string name="prixCONF">20</string>
+    <string name="title2lieu">Tunis</string>
+    <string name="titleHAClieu">Bardo</string>
+    <string name="telHAC">26733905</string>
+    <string name="telCONF">99792427</string>
+    <string name="telCONFADD1">+216</string>
+    <string name="dateHAC">20.Juin.2025</string>
+    <string name="dateCONF">12.Mai.2024</string>
+    <string name="titleADDCONF">Conference Title</string>
+    <string name="nameCONF">Company Name</string>
+    <string name="descriptionCONF">Description</string>
+    <string name="title2lieuCONFADD">Location</string>
+    <string name="dateCONFADD">Date</string>
+    <string name="btn_ADDCONF">ADD Conference</string>
+    <string name="btn_ADDHACK">ADD Hackathon</string>
+    <string name="prixCONFADD">price</string>
+    <string name="titleHACKADD"></string>
+    <string name="descriptionHACKADD">Description</string>
+
+
+
+
+</resources>

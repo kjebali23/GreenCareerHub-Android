@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_opp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/afficheCONF"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/affiche1" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/titleCONF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorText"
+        android:text="TECHNO STORE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/afficheCONF"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.Material3.Button.TextButton"
+
+
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/locDate"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleCONF"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_localisation"
+            android:text="@string/title2lieu"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/color11"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dateCONF"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:drawableLeft="@drawable/ic_date"
+            android:layout_weight="1"
+            android:textColor="@color/color11"
+            android:gravity="center"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/destitleCONF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Description2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/locDate"
+        android:layout_marginLeft="15dp"
+        android:gravity="start"
+        android:textColor="@color/colorText"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:textSize="20dp"
+        android:layout_marginTop="35dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/disc_cadreCONF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destitleCONF"
+        android:layout_margin="20dp"
+        android:outlineSpotShadowColor="@color/blue"
+        app:cardCornerRadius="15dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jzfjkfbzj\nfjebfefjkbzefj\nfnjkefbjkebfze fbez\nfkzbefkjbejkbfkezjf\nfbeshjkbekbkzezfjksn,d v"
+            android:layout_margin="10dp"
+            android:textSize="16dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/prixtelCONF"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disc_cadreCONF"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_txt2"
+            android:drawableLeft="@drawable/ic_euro"
+            android:textSize="18dp"
+            android:text="@string/prixCONF"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/telCONF"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/custom_txt"
+            android:drawableLeft="@drawable/ic_phone"
+            android:textColor="@color/colorText"
+            android:textSize="18dp"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/context_view"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleHACK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/titleADDCONF"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148"
+        app:startIconDrawable="@drawable/ic_title"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titleHACKADD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/telHACKADD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/telCONFADD1"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/ic_phone"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="112dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleHACK">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/telHACKADD1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/DESCHACK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/descriptionHACKADD"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/ic_description"
+        app:errorEnabled="true"
+        app:suffixText="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telHACKADD">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descriptionHACKADD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/locHACK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title2lieuCONFADD"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/ic_localisation"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DESCHACK">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/locHACKADD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/DateHACKADD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dateCONFADD"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/ic_date"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locHACK">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateHACKADD1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/prixHACKADD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prixCONFADD"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/ic_euro"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateHACKADD">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/prixHACKADD1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:backgroundTint="@color/color11"
+        android:id="@+id/btn_ADDHACK"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/btn_ADDHACK"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prixHACKADD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

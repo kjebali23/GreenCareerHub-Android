@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/context_view"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleCONFADD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/titleADDCONF"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_title"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titleCONFADD1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/telCONFADD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/telCONFADD1"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/ic_phone"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="112dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleCONFADD">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameCONFADD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/DESC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/descriptionCONF"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/ic_description"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@+id/telCONFADD">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descriptionCONFADD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiPasswordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title2lieuCONFADD"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/ic_localisation"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DESC">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/locCONFADD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/DateCONFADD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dateCONFADD"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/ic_date"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiPasswordLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateCONFADD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/prixCONFADD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prixCONFADD"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/ic_euro"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateCONFADD">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/prixCONFADD1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:backgroundTint="@color/color11"
+        android:id="@+id/btnADDCONF"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/btn_ADDCONF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prixCONFADD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_opp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/afficheHACK"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/affiche3" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/titleHACL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/colorText"
+        android:text="TITLE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/afficheHACK"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="48dp"
+        style="@style/Widget.Material3.Button.TextButton"
+
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/locDateHACK"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleHACL"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_localisation"
+            android:text="@string/titleHAClieu"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/color11"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dateHAC"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:drawableLeft="@drawable/ic_date"
+            android:layout_weight="1"
+            android:textColor="@color/color11"
+            android:gravity="center"
+            />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/destitleHACK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descriptionHACKADD"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/locDateHACK"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:textSize="20dp"
+        android:layout_marginTop="35dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/disc_cadreHACK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destitleHACK"
+        android:layout_margin="20dp"
+        android:outlineSpotShadowColor="@color/blue"
+        app:cardCornerRadius="15dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jzfjkfbzj\nfjebfefjkbzefj\nfnjkefbjkebfze fbez\nfkzbefkjbejkbfkezjf\nfbeshjkbekbkzezfjksn,d v"
+            android:layout_margin="10dp"
+            android:textSize="16dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/prixtelCONF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="48dp"
+        android:weightSum="2"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disc_cadreHACK">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_txt2"
+            android:drawableLeft="@drawable/ic_euro"
+            android:gravity="center"
+            android:text="@string/title2prixHACK"
+            android:textColor="@color/colorText"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_txt"
+            android:drawableLeft="@drawable/ic_phone"
+            android:gravity="center"
+            android:text="@string/telHAC"
+            android:textColor="@color/colorText"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
