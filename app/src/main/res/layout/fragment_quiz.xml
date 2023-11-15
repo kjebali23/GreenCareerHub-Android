@@ -6,22 +6,124 @@
     android:layout_height="match_parent">
 
     <!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/rvQuiz"-->
-<!--        android:layout_width="match_parent"-->
+    <!--        android:id="@+id/rvQuiz"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:listitem="@layout/single_formation"-->
+    <!--        android:layout_margin="5dp" />-->
+
+
+    <GridView
+        android:id="@+id/gvQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:numColumns="2" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">-->
+<!--&lt;!&ndash;    <data>&ndash;&gt;-->
+<!--&lt;!&ndash;        <variable name="projectPortfolioVM" type="com.khalilsapp.app.modules.projectportfolio.data.viewmodel.ProjectPortfolioVM"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </data>&ndash;&gt;-->
+<!--    <LinearLayout android:gravity="start"-->
+<!--        android:id="@+id/linearProjectportfol"-->
 <!--        android:layout_height="match_parent"-->
-<!--        tools:listitem="@layout/single_formation"-->
-<!--        android:layout_margin="5dp" />-->
-
-
-        <GridView
-            android:id="@+id/gvQuiz"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            android:numColumns="2" />
-
-
-
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--        android:layout_width="match_parent"-->
+<!--        android:orientation="vertical" style="@style/groupStylegray_51">-->
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:id="@+id/toolbarToolbar"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="@dimen/_14pxh"-->
+<!--            android:layout_marginStart="@dimen/_16pxh"-->
+<!--            android:layout_marginTop="@dimen/_12pxv"-->
+<!--            android:layout_width="match_parent" app:contentInsetStart="0dp">-->
+<!--            <LinearLayout android:id="@+id/linearIPhoneXorne"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="match_parent" android:orientation="horizontal">-->
+<!--                <ImageView android:id="@+id/imageLeftSide"-->
+<!--                    android:layout_height="@dimen/_21pxh"-->
+<!--                    android:layout_width="@dimen/_54pxh"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/img_leftside_black_901"-->
+<!--                    tools:ignore="ContentDescription" tools:src="@drawable/img_leftside_black_901"/>-->
+<!--                <ImageView android:id="@+id/imageRightSide"-->
+<!--                    android:layout_height="@dimen/_11pxh"-->
+<!--                    android:layout_marginBottom="@dimen/_4pxv"-->
+<!--                    android:layout_marginStart="@dimen/_271pxh"-->
+<!--                    android:layout_marginTop="@dimen/_5pxv"-->
+<!--                    android:layout_width="@dimen/_66pxh"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/img_rightside_black_902"-->
+<!--                    tools:ignore="ContentDescription" tools:src="@drawable/img_rightside_black_902"/>-->
+<!--            </LinearLayout>-->
+<!--        </androidx.appcompat.widget.Toolbar>-->
+<!--        <LinearLayout android:id="@+id/linearRowarrowleft"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="@dimen/_16pxh"-->
+<!--            android:layout_marginStart="@dimen/_16pxh"-->
+<!--            android:layout_marginTop="@dimen/_26pxv"-->
+<!--            android:layout_width="match_parent" android:orientation="horizontal">-->
+<!--            <ImageView android:id="@+id/imageArrowleft"-->
+<!--                android:layout_height="@dimen/_12pxh"-->
+<!--                android:layout_marginBottom="@dimen/_8pxv"-->
+<!--                android:layout_marginTop="@dimen/_6pxv"-->
+<!--                android:layout_width="@dimen/_12pxh"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/img_arrowleft"-->
+<!--                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>-->
+<!--            <TextView android:ellipsize="end"-->
+<!--                android:id="@+id/txtProjectportfol"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_91pxh"-->
+<!--                android:layout_marginTop="@dimen/_2pxv"-->
+<!--                android:layout_weight="0.93" android:layout_width="0dp"-->
+<!--                android:lineSpacingExtra="@dimen/_1pxh"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="@{projectPortfolioVM.projectPortfolioModel.txtProjectportfol}"-->
+<!--                style="@style/txtGilroysemibold24" tools:text="@string/msg_project_portfol"/>-->
+<!--            <ImageView android:id="@+id/imageMorevertical"-->
+<!--                android:layout_height="@dimen/_16pxh"-->
+<!--                android:layout_marginBottom="@dimen/_6pxv"-->
+<!--                android:layout_marginEnd="@dimen/_11pxh"-->
+<!--                android:layout_marginStart="@dimen/_96pxh"-->
+<!--                android:layout_marginTop="@dimen/_4pxv"-->
+<!--                android:layout_width="@dimen/_2pxh"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/img_morevertical"-->
+<!--                tools:ignore="ContentDescription" tools:src="@drawable/img_morevertical"/>-->
+<!--        </LinearLayout>-->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:id="@+id/recyclerListrectangle1314"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="@dimen/_16pxh"-->
+<!--            android:layout_marginStart="@dimen/_16pxh"-->
+<!--            android:layout_marginTop="@dimen/_35pxv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--            itemSpace="@{@dimen/_24pxh}" tools:itemCount="2" tools:listitem="@layout/row_listrectangle1314"/>-->
+<!--        <ImageView android:id="@+id/imagePluscircleSol"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:layout_height="@dimen/_41pxh"-->
+<!--            android:layout_marginBottom="@dimen/_20pxv"-->
+<!--            android:layout_marginEnd="@dimen/_20pxh"-->
+<!--            android:layout_marginStart="@dimen/_20pxh"-->
+<!--            android:layout_marginTop="@dimen/_304pxv"-->
+<!--            android:layout_width="@dimen/_41pxh"-->
+<!--            android:scaleType="centerCrop" circular="@{true}"-->
+<!--            imageRes="@{@drawable/img_pluscirclesol}"-->
+<!--            tools:ignore="ContentDescription" tools:src="@drawable/img_pluscirclesol"/>-->
+<!--    </LinearLayout>-->
+<!--</layout>-->

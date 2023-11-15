@@ -22,6 +22,8 @@ class FormationFragment: Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentFormationBinding.inflate(layoutInflater)
 
+
+
         binding.rvFormation.adapter = FormationAdapter(getListNews(requireContext()))
         binding.rvFormation.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
 

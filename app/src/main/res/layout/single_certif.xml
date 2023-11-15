@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/formationImage"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="200dp"-->
+    <!--            app:srcCompat="@drawable/ic_launcher_foreground"-->
+    <!--            android:scaleType="centerCrop" />-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:padding="16dp">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/formationTitle"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Formation Title"-->
+    <!--                android:textAppearance="?attr/textAppearanceTitleMedium" />-->
+
+    <!--            &lt;!&ndash;            <TextView&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:id="@+id/formationDescription"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_marginTop="8dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:text="Formation Description"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:textAppearance="?attr/textAppearanceBodyMedium"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:textColor="?android:attr/textColorSecondary" />&ndash;&gt;-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/formationLevel"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="8dp"-->
+    <!--                android:text="Formation Level"-->
+    <!--                android:textAppearance="?attr/textAppearanceBodyMedium"-->
+    <!--                android:textColor="?android:attr/textColorSecondary" />-->
+
+    <!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:id="@+id/formationDescription"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:text="Formation Title"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:textAppearance="?attr/textAppearanceTitleMedium" />&ndash;&gt;-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/button"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="38dp"-->
+    <!--                android:text="See More" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/linearColumnrectangle1314"
+        style="@style/groupStylewhite_4"
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:layout_marginStart="@dimen/_16pxh"
+        android:layout_marginTop="@dimen/_35pxv"
+        android:layout_marginEnd="@dimen/_16pxh"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/certifImage"
+            cornerRadius="@{@dimen/_3pxh}"
+            imageRes="@{@drawable/img_rectangle1314_163x372}"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_163pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:gravity="center_horizontal"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_rectangle1314_163x372" />
+
+        <TextView
+            android:id="@+id/certifTitle"
+            style="@style/txtGilroymedium16_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{projectTemplatesVM.projectTemplatesModel.txtHanddrawnflat}"></TextView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/actionShowMore"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Learn more" />
+
+
+        <!--            tools:text="@string/msg_hand_drawn_flat"-->
+        />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -6,74 +6,236 @@
     android:layout_height="match_parent"
     android:layout_margin="5dp">
 
-    <ImageView
-        android:id="@+id/profilePic"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        app:tint="@color/black" />
+<!--    <ImageView-->
+<!--        android:id="@+id/profilePic"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ic_launcher_foreground"-->
+<!--        app:tint="@color/black" />-->
 
-    <TextView
-        android:id="@+id/txtFullName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="@string/name_here"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
+    <ImageView android:id="@+id/profilePic"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/_150pxh"
+        android:layout_marginEnd="@dimen/_16pxh"
+        android:layout_marginStart="@dimen/_16pxh"
+        android:layout_marginTop="@dimen/_37pxv"
+        android:layout_width="@dimen/_150pxh"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profilePic" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop" circular="@{true}"
+        app:srcCompat="@drawable/img_ellipse5"
+        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse5"/>
 
-    <TextView
-        android:id="@+id/txtEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="@string/email_here"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="18sp"
+<!--    <TextView-->
+<!--        android:id="@+id/txtFullName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:text="@string/name_here"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/profilePic" />-->
+
+    <TextView android:ellipsize="end"
+           app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/profilePic"
+            android:id="@+id/txtFullName"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="UserName"
+            style="@style/txtGilroybold18" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtEmail"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:text="@string/email_here"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/txtFullName"
+ />-->
+
+    <TextView android:ellipsize="end"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFullName" />
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/txtFullName"
 
-    <com.google.android.material.divider.MaterialDivider
-        android:id="@+id/materialDivider"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+            android:id="@+id/txtEmail"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="Email"
+            style="@style/txtGilroymedium16" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:textAppearance="?attr/textAppearanceBodyLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bookmarks"
-        android:layout_margin="20dp"
-        android:gravity="start|center"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialDivider" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvBookmarks"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="10dp"
-        tools:listitem="@layout/single_formation"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/materialDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRowperformanceOne"
+                android:layout_width="381dp"
+                android:layout_height="159dp"
+                android:gravity="start"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialDivider">
+
+                <LinearLayout
+                    android:id="@+id/linearColumnperformanceOne"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_35pxv"
+                    android:layout_marginBottom="@dimen/_32pxv"
+                    android:layout_weight="0.59"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtPerformanceOne"
+                        style="@style/txtGilroysemibold18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="Performance"
+                         />
+
+                    <TextView
+                        android:id="@+id/txtYouhavesucces"
+                        style="@style/txtGilroyregular14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:lineSpacingExtra="@dimen/_8pxh"
+                        android:text="You have passed 8 quizzes and 2 certifactes"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearColumn"
+                    style="@style/groupStylecornerRadius_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.41"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linearColumngroup10135"
+                        style="@style/groupStylewhite_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:id="@+id/frameStackgroup10135"
+                            style="@style/groupStylecornerRadius_2"
+                            android:layout_width="@dimen/_138pxh"
+                            android:layout_height="@dimen/_138pxv"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginHorizontal="@dimen/_11pxh"
+                            android:layout_marginVertical="@dimen/_11pxv">
+
+                            <FrameLayout
+                                android:id="@+id/frameGroup10135"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:background="@color/gray_400_4c" />
+
+                            <FrameLayout
+                                android:id="@+id/frameStackgroup10134"
+                                android:layout_width="@dimen/_134pxh"
+                                android:layout_height="@dimen/_134pxv"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="@dimen/_2pxh"
+                                android:layout_marginVertical="@dimen/_2pxv">
+
+                                <FrameLayout
+                                    android:id="@+id/frameGroup10134"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:background="@color/gray_400_4c" />
+
+                                <TextView
+                                    android:id="@+id/txt8700"
+                                    style="@style/txtRobotoblack14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="@dimen/_40pxh"
+                                    android:layout_marginVertical="@dimen/_40pxv"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:text="80%"
+                                    />
+                            </FrameLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBookmarks"
+                android:layout_width="385dp"
+                android:layout_height="201dp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.352"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:listitem="@layout/single_formation" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followed cources"
+                app:layout_constraintBottom_toTopOf="@+id/rvBookmarks"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialDivider"
+                app:layout_constraintVertical_bias="0.919" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<color name="bluegray_400_90">#9074839d</color>
+<color name="gray_51">#f9fbff</color>
+<color name="bluegray_300_87">#87919eab</color>
+<color name="black_900_b2">#b2000000</color>
+<color name="blue_A700">#0061ff</color>
+<color name="light_blue_100">#b0e5fc</color>
+<color name="yellow_900_3f">#3feb9612</color>
+<color name="red_200">#fa9a9a</color>
+<color name="gray_600_19">#197e7e7e</color>
+<color name="gray_400_4c">#4cc4c4c4</color>
+<color name="green_A100">#b5eacd</color>
+<color name="black_900_3f">#3f000000</color>
+<color name="gray_50">#fafcff</color>
+<color name="gray_300_99">#99e4e4e4</color>
+<color name="black_900">#000000</color>
+<color name="bluegray_100_6c">#6cd1d3d4</color>
+<color name="blue_A700_7e">#7e0061ff</color>
+<color name="gray_700_11">#11555555</color>
+<color name="gray_400">#b3b3b3</color>
+<color name="red_A200">#fe555d</color>
+<color name="gray_900">#151522</color>
+<color name="bluegray_100">#d6dae2</color>
+<color name="gray_200">#efefef</color>
+<color name="blue_50">#e0ebff</color>
+<color name="bluegray_900">#262b35</color>
+<color name="bluegray_801">#25325a</color>
+<color name="bluegray_800">#37334d</color>
+<color name="white_A700_00">#00ffffff</color>
+<color name="bluegray_700">#535763</color>
+<color name="bluegray_600">#5f6c86</color>
+<color name="bluegray_400">#74839d</color>
+<color name="bluegray_300">#9ea8ba</color>
+<color name="bluegray_200">#bac1ce</color>
+<color name="white_A700">#ffffff</color>
+<color name="bluegray_901">#24363c</color>
+<color name="ic_launcher_background">#FFFFFF</color>
 </resources>

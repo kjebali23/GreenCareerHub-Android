@@ -37,11 +37,14 @@
     <string name="category1" >Renewable Energie</string>
     <string name="category2" >Software developement</string>
 
+    <string name="msg_coming_soon">Coming soon :)</string>
 
 
 
 
-<string name="about"><b>NASCAR Cup Series</b>\n\nIn a historic shift for the sport, beginning in 2020 NASCAR’s premier series became known as the NASCAR Cup Series and featured four cornerstone brands as Premier Partners: Busch Beer, Coca-Cola®, GEICO and Xfinity. All four partners are prominently featured in multiple platforms across the sport, including integrations in broadcast, NASCAR digital and social channels, event entitlements, in-market promotions and at-track activations.</string>
+
+
+    <string name="about"><b>NASCAR Cup Series</b>\n\nIn a historic shift for the sport, beginning in 2020 NASCAR’s premier series became known as the NASCAR Cup Series and featured four cornerstone brands as Premier Partners: Busch Beer, Coca-Cola®, GEICO and Xfinity. All four partners are prominently featured in multiple platforms across the sport, including integrations in broadcast, NASCAR digital and social channels, event entitlements, in-market promotions and at-track activations.</string>
 <string name="name_here">Name Here</string>
 <string name="email_here">Email Here</string>
 <string name="info">Info</string>
