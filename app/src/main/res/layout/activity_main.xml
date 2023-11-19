@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/context_view"
     tools:context=".MainActivity">
 
 
@@ -16,24 +17,32 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="413dp"
+        android:layout_height="54dp"
         android:orientation="horizontal"
         android:padding="2dp"
         android:weightSum="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        >
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
         <Button
             android:id="@+id/btnFormation"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="Formation" />
+
+        <Button
+            android:id="@+id/btnCertif"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
-            android:text="Formation" />
+            android:text="Certif" />
 
         <Button
             android:id="@+id/btnQuiz"
@@ -47,11 +56,12 @@
         <Button
             android:id="@+id/btnAchievements"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:layout_weight="1"
             android:text="Achievements" />
+
 
     </LinearLayout>
 
