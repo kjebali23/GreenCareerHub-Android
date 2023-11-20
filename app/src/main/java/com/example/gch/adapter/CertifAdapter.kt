@@ -1,14 +1,22 @@
 package com.example.gch.adapter
 
 import android.content.Intent
+import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.DataSource
+import com.bumptech.glide.load.engine.GlideException
+import com.bumptech.glide.request.RequestListener
 import com.example.gch.CourseActivity
+import com.example.gch.Models.Certif
 import com.example.gch.Models.Formation
+import com.example.gch.R
 import com.example.gch.databinding.SingleCertifBinding
+import com.squareup.picasso.Picasso
 
-class CertifAdapter(val formationList: MutableList<Formation>) : RecyclerView.Adapter<CertifAdapter.CertifHolder>() {
+class CertifAdapter(val certifList: MutableList<Certif>) : RecyclerView.Adapter<CertifAdapter.CertifHolder>() {
 
 
 
@@ -19,16 +27,32 @@ class CertifAdapter(val formationList: MutableList<Formation>) : RecyclerView.Ad
 
     override fun onBindViewHolder(holder: CertifAdapter.CertifHolder, position: Int) {
         with(holder){
-            with(formationList[position]){
+            with(certifList[position]){
                 binding.certifTitle.text = title
-//                binding.formationDescription.text = description
-//                binding.formationLevel.text = level
-                binding.certifImage.setImageResource(imageRes)
+
+                  //Using Picasso
+//                Picasso.get().load("https://palestinevaincra.com/site/wp-content/uploads/2020/11/visuel-FB-Boycott.png?fbclid=IwAR0KNeII3PPWJZbtaYAEpBSL-cEZt9PKP3fsiTUa0YMSYAwaXzxUj9VTjSs.png")
+//                    .placeholder(R.drawable.noimage).into(binding.certifImage)
+
+                //Using glide
+//                Glide.with(itemView.context)
+//                    .load("https://palestinevaincra.com/site/wp-content/uploads/2020/11/visuel-FB-Boycott.png")
+//                    .into(binding.certifImage)
+
+                Glide.with(itemView.context)
+                    .load("https://palestinevaincra.com/site/wp-content/uploads/2020/11/visuel-FB-Boycott.png")
+                    .error(R.drawable.noimage)
+                    .into(binding.certifImage)
+
+
+
+
+
+
                 binding.actionShowMore.setOnClickListener{
-//                    Snackbar.make((itemView.context as Activity).findViewById(R.id.context_view), itemView.context.getString(R.string.msg_coming_soon), Snackbar.LENGTH_SHORT).show()
 
                     val intent = Intent( itemView.context , CourseActivity::class.java).apply {
-                        putExtra("image", imageRes)
+//                        putExtra("image", imageUrl)
                         putExtra("title" , title)
 
                     }
@@ -44,11 +68,16 @@ class CertifAdapter(val formationList: MutableList<Formation>) : RecyclerView.Ad
 
 
 
+    fun updateList(newList: List<Certif>) {
+        certifList.clear()
+        certifList.addAll(newList)
+        notifyDataSetChanged()
+    }
 
 
 
 
-    override fun getItemCount() = formationList.size
+    override fun getItemCount() = certifList.size
 
     inner class CertifHolder(val binding: SingleCertifBinding) : RecyclerView.ViewHolder(binding.root)
 }

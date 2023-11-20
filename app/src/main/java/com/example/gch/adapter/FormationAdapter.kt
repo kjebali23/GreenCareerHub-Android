@@ -1,17 +1,16 @@
 package com.example.gch.adapter
 
-import android.app.Activity
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gch.Models.Formation
-import com.example.gch.R
 import com.example.gch.databinding.SingleFormationBinding
-import android.content.Context
 import android.content.Intent
+import android.util.Log
 import com.example.gch.CourseActivity
-import com.example.gch.MainActivity
-import com.google.android.material.snackbar.Snackbar
+import com.example.gch.R
+import com.squareup.picasso.Picasso
+
 
 
 class FormationAdapter(val formationList: MutableList<Formation>) : RecyclerView.Adapter<FormationAdapter.FormationHolder>() {
@@ -21,15 +20,17 @@ class FormationAdapter(val formationList: MutableList<Formation>) : RecyclerView
         return FormationHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: FormationHolder, position: Int) {
+    override fun onBindViewHolder(holder: FormationHolder, position: Int ) {
         with(holder){
             with(formationList[position]){
                 binding.formationTitle.text = title
 //                binding.formationDescription.text = description
 //                binding.formationLevel.text = level
-                binding.formationImage.setImageResource(imageRes)
+
+                Picasso.get().load(imageUrl).placeholder(R.drawable.noimage).into(binding.formationImage)
+
+//                binding.formationImage.setImageResource(imageRes)
                 binding.actionShowMore.setOnClickListener{
-//                    Snackbar.make((itemView.context as Activity).findViewById(R.id.context_view), itemView.context.getString(R.string.msg_coming_soon), Snackbar.LENGTH_SHORT).show()
 
                     val intent = Intent( itemView.context , CourseActivity::class.java).apply {
                         putExtra("image", imageRes)
@@ -46,6 +47,13 @@ class FormationAdapter(val formationList: MutableList<Formation>) : RecyclerView
     }
 
     override fun getItemCount() = formationList.size
+
+    fun updateList(newList: List<Formation>) {
+        formationList.clear()
+        formationList.addAll(newList)
+        notifyDataSetChanged()
+        Log.d("formation List", formationList[0].imageUrl)
+    }
 
     inner class FormationHolder(val binding: SingleFormationBinding) : RecyclerView.ViewHolder(binding.root)
 }
