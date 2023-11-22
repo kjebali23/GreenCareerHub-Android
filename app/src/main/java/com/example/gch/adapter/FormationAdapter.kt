@@ -27,14 +27,18 @@ class FormationAdapter(val formationList: MutableList<Formation>) : RecyclerView
 //                binding.formationDescription.text = description
 //                binding.formationLevel.text = level
 
-                Picasso.get().load(imageUrl).placeholder(R.drawable.noimage).into(binding.formationImage)
+                Picasso.get().load(imageUrl)
+                    .placeholder(R.drawable.noimage)
+                    .into(binding.formationImage)
 
 //                binding.formationImage.setImageResource(imageRes)
                 binding.actionShowMore.setOnClickListener{
 
                     val intent = Intent( itemView.context , CourseActivity::class.java).apply {
-                        putExtra("image", imageRes)
+                        putExtra("image", imageUrl)
                         putExtra("title" , title)
+                        putExtra("description" , description)
+                        putExtra("formationUrl" , formationUrl)
 
                     }
                     itemView.context.startActivity(intent)

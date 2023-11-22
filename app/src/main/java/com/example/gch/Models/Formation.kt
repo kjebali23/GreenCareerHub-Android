@@ -6,5 +6,6 @@ class Formation (
     val imageUrl:String,
     val title: String,
     val description: String,
+    val formationUrl : String
 //    val level: String,
 )

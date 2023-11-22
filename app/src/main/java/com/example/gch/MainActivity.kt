@@ -1,5 +1,6 @@
 package com.example.gch
 
+import QuizFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +8,6 @@ import com.example.gch.databinding.ActivityMainBinding
 import com.example.gch.fragment.AchievementFragment
 import com.example.gch.fragment.FormationFragment
 import com.example.gch.fragment.CertifFragment
-import com.example.gch.fragment.QuizFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,6 +45,8 @@ class MainActivity : AppCompatActivity() {
 
             changeFragment(QuizFragment(), "")
         }
+
+        // Ne9es we7ed lel les questions
     }
 
     private fun changeFragment(fragment: Fragment, name: String) {
