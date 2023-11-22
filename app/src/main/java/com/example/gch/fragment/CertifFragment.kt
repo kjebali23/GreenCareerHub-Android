@@ -75,7 +75,7 @@ class CertifFragment: Fragment() {
 
     private fun getListCertif(context: Context) : MutableList<Certif> {
         return mutableListOf(
-            Certif(1, "Certif" , "desc" , "url"   )
+            Certif(1, "Certif" , "desc" , "url", arrayListOf("Node js")    )
         )
     }
 

@@ -234,46 +234,7 @@ class GridViewAdapter(
         lateinit var image: ImageView
     }
 
-//    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-//        val view: View
-//        val viewHolder: ViewHolder
-//
-//        if (convertView == null) {
-//            val binding = SingleQuizBinding.inflate(LayoutInflater.from(context), parent, false)
-//            view = binding.root
-//            viewHolder = ViewHolder()
-//            viewHolder.title = binding.formationTitle
-//            viewHolder.image = binding.formationImage
-//            view.tag = viewHolder
-//        } else {
-//            view = convertView
-//            viewHolder = view.tag as ViewHolder
-//        }
-//
-//        val quiz = quizList[position]
-//        viewHolder.title.text = quiz.title
-//        viewHolder.image.setImageResource(R.drawable.img_rectangle1314)
-//
-//        view.setOnClickListener {
-//            val intent = Intent(context, QuizActivity::class.java).apply {
-//                // Pass necessary data to QuizActivity
-//                // intent.putExtra("quizId", quiz.id)
-//            }
-//            context.startActivity(intent)
-//        }
-//
-//        return view
-//    }
-//
-//    fun updateList(newList: List<Quiz>) {
-//        quizList = newList
-//        notifyDataSetChanged()
-//    }
-//
-//    private class ViewHolder {
-//        lateinit var title: TextView
-//        lateinit var image: ImageView
-//    }
+
 }
 
 

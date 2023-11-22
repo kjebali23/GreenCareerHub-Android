@@ -35,20 +35,20 @@ data class QuizQuestion(
     val id: Int,
     val questionText: String,
     val answers: List<Answer>,
-    val correctAnswer: Answer? // Change type to Answer?
+    val correctAnswer: List<Answer>? // Correct type declaration
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString() ?: "",
         parcel.createTypedArrayList(Answer.CREATOR) ?: emptyList(),
-        parcel.readParcelable(Answer::class.java.classLoader) // Change this line
+        parcel.createTypedArrayList(Answer.CREATOR) // Change this line
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeInt(id)
         parcel.writeString(questionText)
         parcel.writeTypedList(answers)
-        parcel.writeParcelable(correctAnswer, flags) // Change this line
+        parcel.writeTypedList(correctAnswer) // Change this line
     }
 
     override fun describeContents(): Int {

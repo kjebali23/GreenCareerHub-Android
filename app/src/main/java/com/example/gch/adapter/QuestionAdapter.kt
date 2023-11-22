@@ -54,13 +54,15 @@ class QuestionAdapter(private val questionList: List<QuizQuestion>, private val 
         var score = 0
         for ((position, userAnswerText) in userAnswers) {
             val userAnswer = Answer(userAnswerText, false) // Create an Answer object from the user's answer text
-            val correctAnswer = questionList[position].correctAnswer
-            if (correctAnswer != null && userAnswer.text == correctAnswer.text && correctAnswer.isCorrect) {
+            val correctAnswers = questionList[position].correctAnswer
+
+            if (correctAnswers != null && correctAnswers.any { it.text == userAnswer.text && it.isCorrect }) {
                 score++
             }
         }
         return score
     }
+
 
 
 

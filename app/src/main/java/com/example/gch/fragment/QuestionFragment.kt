@@ -27,18 +27,6 @@ class QuestionFragment : Fragment() {
     }
 
 
-//    private fun getQuestionsFromArguments(): List<Question> {
-//        return arguments?.getParcelableArrayList<QuizQuestion>("questions")?.map {
-//            Question(
-//                it.id,
-//                it.questionText,
-//                it.answers.map { answer -> answer.text }.toTypedArray(),
-//                it.correctAnswer ?: ""
-//            )
-//        } ?: emptyList()
-//    }
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
