@@ -3,21 +3,28 @@ package com.example.gch
 import QuizFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import com.example.gch.databinding.ActivityMainBinding
 import com.example.gch.fragment.AchievementFragment
 import com.example.gch.fragment.FormationFragment
 import com.example.gch.fragment.CertifFragment
+import com.example.gch.fragment.EntrepriseFormationFragment
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
 
         binding.btnFormation.setOnClickListener {
 
@@ -37,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnCertif.setOnClickListener {
 
 
-            changeFragment(CertifFragment(), "")
+            changeFragment(EntrepriseFormationFragment(), "")
         }
 
         binding.btnQuiz.setOnClickListener {
@@ -46,7 +53,6 @@ class MainActivity : AppCompatActivity() {
             changeFragment(QuizFragment(), "")
         }
 
-        // Ne9es we7ed lel les questions
     }
 
     private fun changeFragment(fragment: Fragment, name: String) {

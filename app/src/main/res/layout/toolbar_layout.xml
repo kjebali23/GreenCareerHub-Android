@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:title="@string/app_name"
-        app:navigationIcon="@drawable/ic_launcher_foreground"
+        app:navigationIcon="@drawable/ic_dehaze"
         app:titleTextColor="@color/white"/>
 
 </com.google.android.material.appbar.AppBarLayout>

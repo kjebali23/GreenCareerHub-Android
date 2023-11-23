@@ -78,37 +78,3 @@ class QuestionAdapter(private val questionList: List<QuizQuestion>, private val 
 
 
 
-
-//import com.example.gch.Models.Question
-//
-//import android.app.Activity
-//import android.view.LayoutInflater
-//import android.view.ViewGroup
-//import androidx.recyclerview.widget.RecyclerView
-//import com.example.gch.databinding.SingleQuestionBinding
-//import com.google.android.material.snackbar.Snackbar
-
-//class QuestionAdapter(val questionList: MutableList<Question>) : RecyclerView.Adapter<QuestionAdapter.QuestionHolder>() {
-//
-//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuestionHolder {
-//        val binding = SingleQuestionBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-//        return QuestionHolder(binding)
-//    }
-//
-//    override fun onBindViewHolder(holder: QuestionHolder, position: Int) {
-//        with(holder){
-//            with(questionList[position]){
-////                binding.newsTitle.text = title
-////                binding.newsDescription.text = description
-////                binding.newsImage.setImageResource(imageRes)
-////                binding.actionShowMore.setOnClickListener {
-//////                    Snackbar.make((itemView.context as Activity).findViewById(R.id.context_view), itemView.context.getString(R.string.msg_coming_soon), Snackbar.LENGTH_SHORT).show()
-////                }
-//            }
-//        }
-//    }
-//
-//    override fun getItemCount() = questionList.size
-//
-//    inner class QuestionHolder(val binding: SingleQuestionBinding) : RecyclerView.ViewHolder(binding.root)
-//}

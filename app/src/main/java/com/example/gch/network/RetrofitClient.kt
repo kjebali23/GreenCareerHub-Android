@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import com.example.gch.api.FormationApi
 
 object RetrofitClient {
-    private const val ip = "192.168.202.196";
+    private const val ip = "192.168.1.27";
     private const val BASE_URL = "http://"+ ip +":3000/"
 
     val instance: FormationApi by lazy {

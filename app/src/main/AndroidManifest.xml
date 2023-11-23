@@ -22,6 +22,8 @@
         <activity android:name=".CourseActivity" />
         <activity android:name=".QuizActivity" />
         <activity android:name=".CertifActivity" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".EntrepFormationActivity" />
 
         <activity
             android:name=".MainActivity"
