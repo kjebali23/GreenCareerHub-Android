@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c6cce9b-03c2-41b8-bfe2-aa720980d80c" name="Changes" comment="" />
+    <list default="true" id="3c6cce9b-03c2-41b8-bfe2-aa720980d80c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +29,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/fares/Documents/GitHub/GreenCareerHub-Android",
+    "last_opened_file_path": "C:/Users/fares/Desktop/esprit/DEV android/Event",
     "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
