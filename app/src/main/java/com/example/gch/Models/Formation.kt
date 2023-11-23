@@ -1,7 +1,7 @@
 package com.example.gch.Models
 
 class Formation (
-    val id: Int,
+    val id: String,
     val imageRes: Int,
     val imageUrl:String,
     val title: String,

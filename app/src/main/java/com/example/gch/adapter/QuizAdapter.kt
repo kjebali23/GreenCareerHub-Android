@@ -55,7 +55,7 @@ class GridViewAdapter(
 
         val quiz = quizList[position]
         viewHolder.title.text = quiz.title
-        viewHolder.image.setImageResource(R.drawable.img_rectangle1314)
+        viewHolder.image.setImageResource(R.drawable.quiz)
 
         view.setOnClickListener {
             onQuizItemClickListener(quiz)

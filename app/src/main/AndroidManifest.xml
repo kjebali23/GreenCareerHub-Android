@@ -25,6 +25,9 @@
         <activity android:name=".AddActivity" />
         <activity android:name=".EntrepFormationActivity" />
 
+        <activity android:name=".EntrepriseActivity" />
+        <activity android:name=".UpdateActivity" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

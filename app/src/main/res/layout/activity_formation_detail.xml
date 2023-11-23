@@ -105,9 +105,19 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="match_parent"
+            android:layout_width="401dp"
             android:layout_height="wrap_content"
-            android:text="Delete Formation " />
+            android:text="Delete Formation "
+            android:layout_marginLeft="5dp"
+            />
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="401dp"
+            android:layout_height="wrap_content"
+            android:text="Update Formation"
+            android:layout_marginLeft="5dp"
+            />
 
     </LinearLayout>
 </layout>

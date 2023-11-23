@@ -70,16 +70,7 @@
                 android:gravity="start"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/txtRashedOthmanS"
-                    style="@style/txtGilroysemibold20"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_10pxh"
-                    android:ellipsize="end"
-                    android:lineSpacingExtra="@dimen/_1pxh"
-                    android:singleLine="true"
-                    android:text="Course Duration" />
+
             </LinearLayout>
         </LinearLayout>
 

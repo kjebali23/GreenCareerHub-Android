@@ -39,7 +39,7 @@ class CourseActivity : AppCompatActivity() {
         val formatioUrl = intent.getStringExtra("formationUrl")
 
         val imageView = findViewById<ImageView>(R.id.courseimage)
-        imageView.setImageResource(imageRes)
+        imageView.setImageResource(R.drawable.noimage)
 
         val textView = findViewById<TextView>(R.id.coursetitle)
         textView.text = title

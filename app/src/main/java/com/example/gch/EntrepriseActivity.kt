@@ -1,46 +1,58 @@
 package com.example.gch
 
 import QuizFragment
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.gch.databinding.ActivityEntrepriseBinding
 import com.example.gch.databinding.ActivityMainBinding
 import com.example.gch.fragment.AchievementFragment
-import com.example.gch.fragment.FormationFragment
-import com.example.gch.fragment.CertifFragment
 import com.example.gch.fragment.EntrepriseFormationFragment
+import com.example.gch.fragment.FormationFragment
 
-class MainActivity : AppCompatActivity() {
+class EntrepriseActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-
+    private lateinit var binding: ActivityEntrepriseBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
 
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityEntrepriseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
 
         binding.btnFormation.setOnClickListener {
 
-            changeFragment(FormationFragment(), "")
+            changeFragment(EntrepriseFormationFragment(), "")
         }
 
+        binding.btnAdd.setOnClickListener {
+            val intent = Intent(this, AddActivity::class.java)
+            startActivity(intent)
 
-
-
-
-
-        binding.btnQuiz.setOnClickListener {
-
-
-            changeFragment(QuizFragment(), "")
         }
+//
+//        binding.btnAchievements.setOnClickListener {
+//
+//
+//            changeFragment(AchievementFragment(), "")
+//        }
+
+//        binding.btnCertif.setOnClickListener {
+//
+//
+//            changeFragment(EntrepriseFormationFragment(), "")
+//        }
+//
+//        binding.btnQuiz.setOnClickListener {
+//
+//
+//            changeFragment(QuizFragment(), "")
+//        }
 
     }
 

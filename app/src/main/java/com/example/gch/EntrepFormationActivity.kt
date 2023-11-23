@@ -35,9 +35,6 @@ class EntrepFormationActivity : AppCompatActivity() {
 
 
 
-//        binding.button.setOnClickListener{
-//            openUrl("https://www.udemy.com/course/maitriser-nodejs-et-son-ecosysteme-npm-express-mongo/")
-//        }
 
 
 
@@ -54,6 +51,15 @@ class EntrepFormationActivity : AppCompatActivity() {
 
         val descriptionTextView = findViewById<TextView>(R.id.txtDescription)
         descriptionTextView.text = description
+
+        binding.buttonUpdate.setOnClickListener {
+            Log.d("UpdateActivity", "Button clicked") // Add this log statement
+            val intent = Intent(this, UpdateActivity::class.java).apply {
+                putExtra("title", title)
+            }
+            startActivity(intent)
+        }
+
 
 
         binding.button.setOnClickListener {
@@ -77,6 +83,8 @@ class EntrepFormationActivity : AppCompatActivity() {
                     Log.e("DeleteFormation", "Failure: ${t.message}")
                 }
             })
+            val intent = Intent(this, EntrepriseActivity::class.java)
+            startActivity(intent)
         }
 
 

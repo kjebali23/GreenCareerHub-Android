@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="45dp"
-        android:text="Add Formation"
+        android:text="Update Formation"
         android:textColor="@color/white"
         android:textSize="35dp"
         android:textStyle="bold"
@@ -84,7 +84,7 @@
 
 
     <EditText
-        android:id="@+id/id_desc"
+        android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_margin="20dp"
@@ -104,11 +104,12 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:backgroundTint="@color/baby_blue"
-        android:text="ADD"
+        android:text="Update"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_desc" />
+        app:layout_constraintTop_toBottomOf="@+id/description" />
 
     <Button
         android:id="@+id/btnBack"

@@ -77,9 +77,9 @@ class FormationFragment: Fragment() {
 
     private fun getListNews(context: Context) : MutableList<Formation> {
         return mutableListOf(
-            Formation(1, R.drawable.ic_news1, context.getString(R.string.news1) , context.getString(R.string.newsDesc1), context.getString(R.string.dificulty1 ),"","","" ,""),
-            Formation(2, R.drawable.ic_news2, context.getString(R.string.news2) , context.getString(R.string.newsDesc2) , context.getString(R.string.dificulty1) , "","","" , ""),
-            Formation(3, R.drawable.ic_news3, context.getString(R.string.news3) , context.getString(R.string.newsDesc3) , context.getString(R.string.dificulty1), "","","" , "")
+            Formation("1", R.drawable.ic_news1, context.getString(R.string.news1) , context.getString(R.string.newsDesc1), context.getString(R.string.dificulty1 ),"","","" ,""),
+            Formation("2", R.drawable.ic_news2, context.getString(R.string.news2) , context.getString(R.string.newsDesc2) , context.getString(R.string.dificulty1) , "","","" , ""),
+            Formation("3", R.drawable.ic_news3, context.getString(R.string.news3) , context.getString(R.string.newsDesc3) , context.getString(R.string.dificulty1), "","","" , "")
         )
     }
 

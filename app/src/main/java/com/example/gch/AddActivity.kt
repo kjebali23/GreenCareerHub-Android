@@ -1,6 +1,7 @@
 package com.example.gch
 
 import android.R
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.ArrayAdapter
@@ -22,15 +23,14 @@ class AddActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-//        val types = arrayOf("Stagiaire", "Alternance", "CDD", "CDI", "Part Time") // Remplacez ces valeurs par les vôtres
-//        val adapter = ArrayAdapter(this, R.layout.simple_spinner_item, types)
-//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-//        spinner.adapter = adapter
 
         binding.btnAdd.setOnClickListener {
-            // Appel de la fonction pour ajouter la conférence
-
             addFormation()
+        }
+
+        binding.btnBack.setOnClickListener {
+            val intent = Intent(this, EntrepriseActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -43,7 +43,7 @@ class AddActivity : AppCompatActivity() {
 
 
         val newFormation = Formation(
-            id = 0,
+            id = "0",
             imageUrl = logo,
             title = title,
             description = desc,
@@ -63,7 +63,6 @@ class AddActivity : AppCompatActivity() {
 
 
 
-        // Envoi de la conférence à l'API pour l'ajout
         val api = RetrofitClient.instance
         val call: Call<Formation> = api.addFormation(newFormation)
         Log.d("RetrofitRequest", "Request Body: ${call.request()}")
@@ -73,15 +72,11 @@ class AddActivity : AppCompatActivity() {
                 Log.d("AddFormationActivity", "onResponse: ${response.body()}")
 
                 if (response.isSuccessful) {
-                    // Ajoute ici la logique que tu veux exécuter après l'ajout
                     Log.d("AddFormationActivity", "Formation added successfully")
                 } else {
-                    // Gestion des erreurs en cas d'échec de l'ajout
                     if (response.errorBody() != null) {
-                        // Afficher le message d'erreur du serveur
                         Log.e("AddFormationActivity", "Error: ${response.errorBody()?.string()}")
                     } else {
-                        // Afficher un message d'erreur générique
                         Log.e("AddFormationActivity", "Error: ${response.message()}")
                     }
                 }
