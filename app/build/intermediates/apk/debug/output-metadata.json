@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "tn.esprit.event",
+  "applicationId": "tn.esprit.gestionevenement",
   "variantName": "debug",
   "elements": [
     {
